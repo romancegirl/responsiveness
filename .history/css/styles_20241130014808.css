@@ -1,0 +1,59 @@
+body {
+    background-color: #202020;
+    color: #f1f1f1;
+    font-size: 110%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h5 {
+    margin: 0;
+}
+
+.containerMain {
+    padding: 0;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+#textCarousel {
+    width: 100%;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+}
+
+.row {
+    text-align: justify;
+}
+
+.paragraph {
+    margin-bottom: 1rem;
+    background-color: #414141;
+}
+
+.inside {
+    margin-top: 2rem;
+}
+
+.btn-outline-light {
+    padding: 0.8rem 2rem; /* Cambié el padding para que los botones no sean tan anchos */
+}
+
+li {
+    list-style: none;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .btn-outline-light {
+        width: 100%; /* Los botones deben ocupar todo el ancho disponible */
+    }
+
+    #textCarousel {
+        max-width: 100%;
+    }
+}

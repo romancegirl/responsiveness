@@ -1,0 +1,258 @@
+body {
+    background-color: #202020;
+    color: #f1f1f1;
+    font-size: 110%;
+}
+
+/* Profile and resume */
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border: #a5c3ffcd;
+    border-style: double;
+    border-width: 5px;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Oculta cualquier parte de la imagen que se desborde */
+    float: right;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Asegura que la imagen llene todo el div sin deformarse */
+}
+
+/* titles */
+
+h2,
+h3,
+h4 {
+    background: linear-gradient(#d98fe9, #5E91FA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+/* Games */
+
+.game-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.game-card a {
+    display: block;
+    position: relative;
+}
+
+.game-pictures {
+    width: 100%;
+    height: 230px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.game-card:hover .game-pictures {
+    transform: scale(1.05);
+    /* Expande ligeramente */
+    filter: blur(3px) brightness(50%);
+    /* Efecto de blur y oscurecimiento */
+}
+
+.game-card .message {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    background-color: #000000b3;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.6rem !important;
+}
+
+.game-card:hover .message {
+    opacity: 1;
+    /* Mostrar "Credits" en hover */
+}
+
+/* Projects */
+
+.project-photo {
+    width: 100%;
+    height: auto;
+}
+
+#secret {
+    background-color: #000000;
+    font-family: "Eagle Lake", serif;
+    font-size: 3rem;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Career, Education, Volunteering */
+
+.career-section,
+.education-section,
+.volunteering-section {
+    width: 47%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1%;
+}
+
+.jobs-studies {
+    background: linear-gradient(#e03e2c, #e7e739);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-top: 1rem;
+}
+
+ul li ul {
+    list-style-type: "★ ";
+}
+
+ul li ul li {
+    margin-top: 0.2rem;
+}
+
+.volunteering-list {
+    list-style-type: "★ ";
+    margin: 0;
+}
+
+/* Special fonts */
+
+
+h1 {
+    font-family: "Playwrite CU", cursive;
+    font-size: 2.5rem;
+} 
+
+/* optionals
+
+h1 {
+    font-family: "Lovers Quarrel", cursive;
+    font-size: 5rem;
+}
+
+*/
+
+.modern-antiqua-regular {
+    font-family: "Modern Antiqua", serif;
+}
+
+
+/* General */
+
+.subtitle {
+    font-style: italic;
+    color: #999;
+    margin-bottom: 0.7rem;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Responsiveness */
+
+.title-small,
+.title-x-small {
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .title-large,
+    .title-x-small {
+        display: none;
+    }
+
+    .title-small {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .title-large,
+    .title-small {
+        display: none;
+    }
+
+    .title-x-small {
+        display: block;
+        text-align: center;
+
+    }
+}
+
+@media screen and (max-width: 995px) {
+
+    .games-section,
+    .projects-section,
+    .career-section,
+    .education-section,
+    .volunteering-section {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .projects-section {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #lostContinent {
+        margin: 0 auto;
+        width: 65%;
+    }
+
+    #clownTherapy {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    #backgroundTherapy {
+        background-color: #fff;
+        margin-bottom: 1rem;
+    }
+}

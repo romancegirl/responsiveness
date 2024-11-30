@@ -1,0 +1,106 @@
+body {
+    background-color: #202020;
+    color: #f1f1f1;
+    font-size: 110%;
+}
+
+/* Profile and resume */
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border: #a5c3ffcd;
+    border-style: double;
+    border-width: 5px;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Oculta cualquier parte de la imagen que se desborde */
+    float: right;
+}
+
+/* titles */
+
+h1 {
+    text-align: center;
+}
+
+h2,
+h3,
+h4 {
+    background: linear-gradient(#d98fe9, #5E91FA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h5 {
+    margin: 0;
+}
+
+/* General */
+
+#textCarousel {
+    width: 40rem;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+}
+
+.row {
+    text-align: justify;
+}
+
+.paragraph {
+margin-bottom: 1rem;
+}
+
+.btn-outline-light {
+    padding: 0.8rem 10rem 0.8rem 1rem;
+    margin-right: 0.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+/* Responsiveness */
+
+.title-small,
+.title-x-small {
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .title-large,
+    .title-x-small {
+        display: none;
+    }
+
+    .title-small {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .title-large,
+    .title-small {
+        display: none;
+    }
+
+    .title-x-small {
+        display: block;
+        text-align: center;
+
+    }
+
+    #textCarousel {
+        max-width: 90%; /* Usa un tamaño relativo en lugar de fijo */
+    }
+}

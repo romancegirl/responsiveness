@@ -1,0 +1,76 @@
+body {
+    background-color: #202020;
+    color: #f1f1f1;
+    font-size: 110%;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+h5 {
+    margin: 0;
+}
+
+.containerMain {
+    padding: 0;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+/* General */
+
+#textCarousel {
+    width: 40rem;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+}
+
+.row {
+    text-align: justify;
+}
+
+.paragraph {
+margin-bottom: 1rem;
+background-color: #414141;
+}
+
+.inside {
+    margin-top: 2rem;
+}
+
+.btn-outline-light {
+    padding: 0.8rem 10rem 0.8rem 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Responsiveness */
+
+
+@media screen and (max-width: 1400px) {
+
+    .title-large,
+    .title-x-small {
+        display: none;
+    }
+
+    .title-small {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    #textCarousel {
+        max-width: 90%; /* Usa un tamaño relativo en lugar de fijo */
+    }
+}
